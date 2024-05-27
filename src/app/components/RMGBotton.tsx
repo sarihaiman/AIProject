@@ -1,47 +1,21 @@
-// import React from 'react';
+import React from 'react';
 
-// interface RMGButtonProps {
-//   title: string;
-//   onClick?: () => void;
-// }
+const BottonComponent = ({ onClick, text }) => {
+    return (
+        <button 
+            onClick={onClick}
+            style={{
+                backgroundColor: '#007bff',
+                color: '#fff',
+                border: 'none',
+                borderRadius: '4px',
+                padding: '8px 16px',
+                cursor: 'pointer'
+            }}
+        >
+            {text}
+        </button>
+    );
+}
 
-// const RMGButton: React.FC<RMGButtonProps> = ({ title, onClick }) => {
-//   return (
-//     <button onClick={onClick}
-//       className="bg-black text-white py-2 px-4 rounded hover:bg-opacity-90 focus:outline-none">
-//       {title}
-//       </button>
-//   );
-// };
-
-// export default RMGButton;
-
-// import React from 'react';
-
-// interface RMGButtonProps {
-//   title: string;
-//   onClick?: () => void;
-// }
-
-// const RMGButton: React.FC<RMGButtonProps> = ({ title, onClick }) => {
-//   return (
-//     <button onClick={onClick} className="bg-black text-white py-2 px-4 rounded hover:bg-opacity-90 focus:outline-none">
-//       {title}
-//     </button>
-//   );
-// };
-
-// export default RMGButton;
-
-// import React from 'react';
-
-// const UpperHeader = ({ title }) => {
-//   return (
-//     <div className="upper-header">
-//       <h1>{title}</h1>
-//     </div>
-//   );
-// };
-
-// export default UpperHeader;
-
+export default BottonComponent;

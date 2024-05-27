@@ -4,14 +4,19 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import LargeTitle from './app/components/RMGText'
 import UpperHeader from './app/components/RMGHeader'
-
+import InputComponent from './app/components/RMGInput'
+import BottonComponent from './app/components/RMGBotton'
 
 function App() {
   const [count, setCount] = useState(0)   
 
   return (
-    <><LargeTitle text={'ret'}/>
-     <UpperHeader title={"cx"}/>
+    <><LargeTitle text={"hello"}/>
+     <UpperHeader title={"hello"}/>
+     <InputComponent/>
+     <br />
+     <BottonComponent text={"hello"} onClick={"undefined"} />
+     <br />
     </>
   )
 }
